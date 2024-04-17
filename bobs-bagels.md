@@ -42,7 +42,7 @@ In Object-Oriented Programming, the systems described by User Stories are made u
 - Take each *User Story* and create a ***Domain Model*** for it
 - Create a table in **Markdown** and put your table in the Description field of the card for the User Story
 
----
+![Bob's Bagels Domain Names](./images/domainNames.png)
 
 ## From Domain Models to Working Code
 
