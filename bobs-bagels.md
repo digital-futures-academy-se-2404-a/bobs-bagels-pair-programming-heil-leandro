@@ -30,7 +30,7 @@ A **User Story** describes one thing a program is expected to do, from the persp
 - Take each of these *Requirement Statements* and create a User Story for each one.
 - Record the user story in a card in the backlog of your ***Kanban*** board - use the *Title* field so it is easily seen
 
-![Bob's Bagels User Stories](./images/Screenshot%202024-04-17%20165445.png)
+![Bob's Bagels User Stories](./images/userstories.png)
 ---
 
 ## From User Stories to Domain Models

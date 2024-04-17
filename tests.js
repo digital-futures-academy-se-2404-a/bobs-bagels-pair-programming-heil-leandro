@@ -2,13 +2,13 @@ import { assertEquals } from "./testframework.js";
 
 // Test 1
 //Arrange
-expected = true;
+let expected = true;
 
 //Act
-actual = addToBasket(item);
+let actual = addToBasket(item);
 
 //Assert
-result = assertEquals(actual, expected);
+let result = assertEquals(actual, expected);
     
 //Report
 console.log(result);
