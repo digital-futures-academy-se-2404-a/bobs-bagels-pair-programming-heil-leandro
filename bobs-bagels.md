@@ -42,6 +42,24 @@ In Object-Oriented Programming, the systems described by User Stories are made u
 - Take each *User Story* and create a ***Domain Model*** for it
 - Create a table in **Markdown** and put your table in the Description field of the card for the User Story
 
+
+ Requirement | Object | Properties          | Message                 | Output   |
+ ----------- | ------ | ------------------- | ----------------------- | -------- |
+ 1           | Item   | Name @string        | addToBasket(@Item)      | @Boolean |
+ 1           | Basket | items @Array[@Item] |                         |          |
+ 2           | Item   | Name @string        | removeFromBasket(@Item) | @Boolean |
+ 2           | Basket | items @Array[@Item] |                         |          |
+ 3           | Basket | items @Array[@Item] | isFull()                | @Boolean |
+             |        | maxCapacity @Int    |                         |          |
+ 4           | Basket | maxCapacity @Int    | increaseCapacity()      | Void     |
+ 5           | Basket | items @Array[@Item] | isInBasket(@Item)       | @Boolean |
+             |        |                     | removeFromBasket(@Item) |          |
+ 6           | Basket | items @Array[@Item] | isInBasket(@Item)       | @Boolean |
+             |        |                     | addToBasket(@Item)      |          |
+ 7           | Item   | Price @float        | getPrice(@Item)         | @float   |
+ 8           | Item   | Price @float        | getPrice(@Item)         | @float   |
+ 8           | Basket | items @Array[@Item] | getTotalPrice()         | @float   |
+
 ![Bob's Bagels Domain Names](./images/domainNames.png)
 
 ## From Domain Models to Working Code
