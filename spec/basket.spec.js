@@ -1,10 +1,9 @@
-import { assertEquals } from "./spec/test-framework/test-framework.js";
+import { assertEquals } from "../spec/test-framework/test-framework.js";
 import basket from "../src/basket.js"
 import item from "../src/item.js";
 
 // Test 1
 console.log(`Test 1`);
-console.log(`==============================`);
 //Arrange
 let expected = true;
 //Act
@@ -13,10 +12,10 @@ let actual = basket.addToBasket(item);
 let result = assertEquals(actual, expected);
 //Report
 console.log(result ? `Pass` : `Fail`);
+console.log(`==============================`);
 
 // Test 2
 console.log(`Test 2`);
-console.log(`==============================`);
 //Arrange
 expected = basket.items.length + 1;
 //Act
@@ -26,10 +25,10 @@ actual = basket.items.length;
 result = assertEquals(actual, expected);
 //Report
 console.log(result ? `Pass` : `Fail`);
+console.log(`==============================`);
 
 // Test 3
 console.log(`Test 3`);
-console.log(`==============================`);
 //Arrange
 expected = false;
 //Act
@@ -38,3 +37,4 @@ actual = basket.addToBasket(null);
 result = assertEquals(actual, expected);
 //Report
 console.log(result ? `Pass` : `Fail`);
+console.log(`==============================`);
