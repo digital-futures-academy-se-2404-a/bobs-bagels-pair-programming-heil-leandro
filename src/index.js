@@ -1,31 +1,23 @@
 //Production code file
 
 import basket from './basket.js';
-import item from './item.js';
 
 //user story 1
 export const addToBasket = (item) => {
-    basket.push(item)
-    return true;
+    return basket.addToBasket(item);
 };
 
 //user story 2
-export const removeFromBasket = (item) => {
-    basket.pop(item)
-    return true;
+export const removeFromBasket = (itemToRemove) => {
+    return basket.removeFromBasket(itemToRemove);
 }
 
 //user story 3
 export const isFull = () => {
-    if (basket.length === 10) {
-        return true;
-    } else {
-        return false;
-    }
+    return basket.isFull();
 };
 
 //user story 4
-// export const increaseCapacity = (basket)=> {
-//     basket.length += 1;
-//     return true;
-// }
+export const increaseCapacity = () => {
+    return basket.increaseCapacity();
+}
