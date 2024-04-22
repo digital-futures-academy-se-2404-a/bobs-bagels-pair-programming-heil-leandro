@@ -7,8 +7,8 @@ import Item from './item.js';
 const basket = new Basket();
 
 // Example items
-const item1 = new Item("Bagel", 0.99);
-const item2 = new Item("Coffee", 1.50);
+const item1 = new Item();
+const item2 = new Item();
 
 // Adding items to basket
 export const addToBasket = (item) => {
