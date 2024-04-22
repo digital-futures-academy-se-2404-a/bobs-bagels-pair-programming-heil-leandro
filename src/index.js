@@ -1,6 +1,7 @@
 //Production code file
 
 import basket from './basket.js';
+import { item1, item2 } from './item.js';
 
 //user story 1
 export const addToBasket = (item) => {
