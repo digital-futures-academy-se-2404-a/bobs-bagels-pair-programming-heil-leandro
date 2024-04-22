@@ -1,24 +1,37 @@
-//Production code file
+// Production code file
 
-import basket from './basket.js';
-import { item1, item2 } from './item.js';
+import Basket from './basket.js';  
+import Item from './item.js';      
 
-//user story 1
+// Start a new basket
+const basket = new Basket();
+
+// Example items
+const item1 = new Item("Bagel", 0.99);
+const item2 = new Item("Coffee", 1.50);
+
+// Adding items to basket
 export const addToBasket = (item) => {
     return basket.addToBasket(item);
 };
 
-//user story 2
+// Removing items from basket
 export const removeFromBasket = (itemToRemove) => {
-    return basket.removeFromBasket(itemToRemove);
+    const index = basket.items.findIndex(item => item.name === itemToRemove.name);
+    if (index > -1) {
+        basket.items.splice(index, 1);
+        return true;
+    }
+    return false;
 }
 
-//user story 3
+// Check if the basket is full
 export const isFull = () => {
     return basket.isFull();
 };
 
-//user story 4
-export const increaseCapacity = () => {
-    return basket.increaseCapacity();
+// Increase the capacity
+export const increaseCapacity = (additionalCapacity = 5) => {
+    basket.capacity += additionalCapacity;
+    return basket.capacity;
 }
