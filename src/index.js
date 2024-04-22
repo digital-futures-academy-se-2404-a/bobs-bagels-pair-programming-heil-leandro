@@ -1,7 +1,7 @@
 // Production code file
 
-import Basket from './basket.js';  
-import Item from './item.js';      
+import Basket from './basket-class.js';  
+import Item from './item-class.js';      
 
 // Start a new basket
 const basket = new Basket();
