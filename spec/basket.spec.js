@@ -1,7 +1,7 @@
 import { assertEquals } from "../spec/test-framework/test-framework.js";
-import { addToBasket } from "../src/index.js";
+import { addToBasket } from "../src/basket-class.js";
 import basket from "../src/basket.js"
-import item from "../src/item.js";
+import item from "../src/item-class.js";
 
 // Test 1
 console.log(`Test 1`);
