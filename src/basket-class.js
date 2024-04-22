@@ -1,12 +1,16 @@
-class basket {
+class Basket {
     #items = [];
     #capacity = 10;
+
+    getItems = () => {
+        return this.#items;
+    }
 
     addToBasket(item) {
         if (this.isFull()) {
             return false; 
         } else {
-            this.items.push(item);
+            this.#items.push(item);
             return true;
         }
     };
@@ -16,4 +20,4 @@ class basket {
     };  
 };
 
-export default basket;
+export default Basket;

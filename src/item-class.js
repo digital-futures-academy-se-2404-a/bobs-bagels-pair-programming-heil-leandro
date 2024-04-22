@@ -1,5 +1,5 @@
-class item { 
+class Item { 
 
 };
 
-export default item;
+export default Item;
